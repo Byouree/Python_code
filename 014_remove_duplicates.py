@@ -1,7 +1,7 @@
 """
 def remove_duplicates_space(arr):
     n = len(arr)
-    if n==0 and n==1:
+    if n==0 or n==1:
         return arr
 
     temp = n*[0]
@@ -20,7 +20,7 @@ print(remove_duplicates_space(arr))
 
 def remove_duplicates(arr):
     n = len(arr)
-    if n==0 and n==1:
+    if n==0 or n==1:
         return arr
     pivot=0
     for last_o in range(0, n-1):
