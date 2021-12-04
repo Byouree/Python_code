@@ -1,5 +1,6 @@
 def hotel_book(arr, dep, k):
     event = []
+    """
     for i in range(0, len(arr)):
         t_arrive = ()
         t_arrive = (arr[i], "RED")
@@ -11,7 +12,8 @@ def hotel_book(arr, dep, k):
         t_departure = ()
         t_departure = (dep[i], "BLUE")
         event.append(t_departure)
-
+    """
+    event = [(t,"RED") for t in arr] + [(t, "BlUE") for t in dep]
 
     event = sorted(event)
     print(event)
@@ -30,7 +32,7 @@ def hotel_book(arr, dep, k):
 
 arr = [1,3,5]
 dep = [2,6,8]
-k = 2
+k = 1
 print(hotel_book(arr, dep, k))
 
 
