@@ -29,3 +29,9 @@ for key, value in dict1.items():
     dict2[key] = set(value)
 
 print(dict2)
+
+
+set1 = {1,2,4,5}
+set2 = {2,1,5,7}
+rem_dup_ele=set1.symmetric_difference(set2)
+print(rem_dup_ele)
