@@ -25,4 +25,6 @@ class Solution(object):
         return boat
     
                 
-                
+       
+    # T = o(nlogn) because of sort
+    # S = o(n) because of sort
