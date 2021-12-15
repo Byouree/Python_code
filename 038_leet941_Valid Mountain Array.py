@@ -35,5 +35,28 @@ class Solution(object):
             
         return 1
     
+  #######################################      
+        
+        class Solution(object):
+    def validMountainArray(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: bool
+        """
+        n = len(arr)
+        i = 1
+        while i < n and arr[i] > arr[i-1]:
+            i+=1
+        if i == 1 or i == n:
+            return False
+        
+        while i < n and arr[i] < arr[i-1]:
+            i+=1
+        
+        return i==n
+            
+            
+# T = O(N)
+# S = O(1)
             
         
