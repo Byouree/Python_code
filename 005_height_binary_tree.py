@@ -27,3 +27,29 @@ root.right.right = Node(6)
 
 
 print(height_tree(root))
+
+
+
+class Node:
+    def __init__(self, key):
+        self.val = key
+        self.left = None
+        self.right = None
+class Solution:
+    def maxDepth(self, root):
+        if root == None:
+            return 0
+
+        ldepth = self.maxDepth(root.left)
+        rdepth = self.maxDepth(root.right)
+
+        if ldepth > rdepth:
+            return 1+ldepth
+        else :
+            return 1+rdepth
+
+
+root = Node(1)
+root.right = Node(2)
+
+print(Solution().maxDepth(root))
